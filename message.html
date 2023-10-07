@@ -16,7 +16,15 @@
     <main>
         <section>
             <h2>Section 1</h2>
-            <p>This is the content of section 1.</p>
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+              
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br>
+              
+                <input type="submit" value="Submit">
+              </form>
         </section>
 
         <section>
