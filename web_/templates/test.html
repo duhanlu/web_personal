@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            text-align: center; /* Optional: Center the content horizontally */
+        }
+
+        .text,
+        .image {
+            display: inline-block;
+            vertical-align: top; /* Align elements to the top */
+            box-sizing: border-box; /* Include padding and borders in the total width */
+        }
+
+        .text {
+            width: 60%; /* Adjust the width as needed */
+            text-align: left; /* Align text to the left */
+            padding-right: 20px; /* Optional: Add padding to create space between text and image */
+        }
+
+        .image {
+            width: 30%; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text">
+        <p>Your text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div><img class="image" src="/static/images/photo.png" alt="Your Image">
+</div>
+
+</body>
+</html>
