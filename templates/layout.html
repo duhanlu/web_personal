@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% if title %}
+                <title>Hanlu Du - {{title}}</title>
+            {% else %}
+                <title>Hanlu Du</title>
+            {% endif %}
+        </title>
+        <link rel="stylesheet" type="text/css" href ="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body> 
+        <header>
+            <p style="font-size: 3cqmax; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(246, 197, 138); text-align: center;">Hanlu Du (Freya)</p>
+            <div class = 'menu'>
+                <ul class="menu1">
+                    <li><a href="/home" class="test">Home</a></li>
+                    <li><a href="/about" class="test">About</a></li>
+                    <li><a href="/message" class="test">Contact</a></li>
+                    <li><a href="/story" class="test">story</a></li>
+                  </ul>
+            </div>
+        </header>
+        {% block content %}{% endblock %}
+    </body>
+</html>
